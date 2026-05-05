@@ -18,3 +18,10 @@ console.log(personJson, typeof personJson);
 // JSON file ---> JS object
 const personParse = JSON.parse (personJson);
 console.log(personParse);
+
+
+  const dataLoad = () => {
+     fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then ((response) => response.json ())
+      .then ((data) => console.log(data))
+  }    
