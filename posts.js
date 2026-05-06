@@ -3,13 +3,24 @@ const loadPost = () => {
     fetch (url)
     .then (res => res.json ())
     .then (json => {
-        console.log(json)
-        displayData (json)
+        // console.log(json);
+        displayData (json);
     })
 }
 
 const displayData = (posts) => {
-   posts.forEach (post => {
-    console.log(post);
-   });
+    // 1 --->for of
+//    for (let post of posts) {
+//     console.log(post);    
+//    }
+
+    // 2 ---> plain for 
+//    for (let i = 0; i < posts.length; i ++) {
+//          console.log(posts[i]);
+//    }
+
+     // 3 ---> forEach 
+     posts.forEach (post => {
+        console.log(post);
+     })
 }
