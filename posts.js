@@ -12,6 +12,7 @@ const displayData = (posts) => {
     // 1 get the container
     const postsContainer = document.getElementById ('posts-container');
     // console.log(postsContainer);
+    postsContainer.innerHTML = '';
     
      posts.forEach (post => {
         //  console.log(post.title);
