@@ -39,6 +39,17 @@ const personParse = JSON.parse (personJson);
   //  }
 
   // const displayPost = (posts) => {
+        // 1 --->for of
+//    for (let post of posts) {
+//     console.log(post);    
+//    }
+
+    // 2 ---> plain for 
+//    for (let i = 0; i < posts.length; i ++) {
+//          console.log(posts[i]);
+//    }
+
+    // 3 ---> forEach
   //   posts.forEach (post => {
   //     console.log(post);
   //   });  

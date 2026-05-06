@@ -9,18 +9,19 @@ const loadPost = () => {
 }
 
 const displayData = (posts) => {
-    // 1 --->for of
-//    for (let post of posts) {
-//     console.log(post);    
-//    }
-
-    // 2 ---> plain for 
-//    for (let i = 0; i < posts.length; i ++) {
-//          console.log(posts[i]);
-//    }
-
-     // 3 ---> forEach 
+    // 1 get the container
+    const postsContainer = document.getElementById ('posts-container');
+    // console.log(postsContainer);
+    
      posts.forEach (post => {
-        console.log(post);
+        //  console.log(post.title);
+        
+        // 2 create Html element 
+        let li = document.createElement ('li');
+        li.innerText = post.title; 
+        // console.log(li);
+        
+        // 3  add element into postContainer
+          postsContainer.appendChild (li);
      })
 }
