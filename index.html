@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore JSON</title>
+    <style>
+        #posts-container {
+            max-width: 1800px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .post-card {
+            border: 1px solid rgb(197, 196, 196);
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px grey;
+            padding: 30px;
+            font-size: 20px;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <button onclick="loadData ()">Load Data</button>
     <button onclick="loadPost ()">Post Data</button>
 
-    <ol id="posts-container"></ol>
+    <!-- <ol id="posts-container"></ol> -->
+     
+     <h2>All post</h2>
+    <div id="posts-container"></div>
+    
 
     <script src="./script.js"></script>
     <script src="./posts.js"></script>
+    <script src="./recap-posts.js"></script>
 </body>
 </html>
